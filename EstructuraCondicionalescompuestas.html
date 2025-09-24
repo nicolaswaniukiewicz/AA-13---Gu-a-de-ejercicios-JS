@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><title>Condicional compuesta 1</title></head>
+<body>
+<script>
+  const a = parseFloat(prompt("Ingresá el primer número:"));
+  const b = parseFloat(prompt("Ingresá el segundo número:"));
+
+  if (a > b) {
+    const suma = a + b;
+    const diferencia = a - b;
+    document.write("a = " + a + ", b = " + b + "<br>");
+    document.write("Suma: " + suma + "<br>");
+    document.write("Diferencia (a - b): " + diferencia);
+  } else {
+    const producto = a * b;
+    document.write("a = " + a + ", b = " + b + "<br>");
+    document.write("Producto: " + producto + "<br>");
+    if (b !== 0) {
+      document.write("División (a / b): " + (a / b));
+    } else {
+      document.write("División (a / b): indefinida (b = 0)");
+    }
+  }
+</script>
+</body>
+</html>
