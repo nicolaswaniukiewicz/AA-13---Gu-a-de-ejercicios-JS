@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><title>Promedio</title></head>
+<body>
+<script>
+  const n1 = parseInt(prompt("Ingrese primera nota:"), 10);
+  const n2 = parseInt(prompt("Ingrese segunda nota:"), 10);
+  const n3 = parseInt(prompt("Ingrese tercera nota:"), 10);
+
+  const suma = n1 + n2 + n3;
+  const promedio = suma / 3;
+
+  document.write("Notas: " + n1 + ", " + n2 + ", " + n3 + "<br>");
+  document.write("Promedio: " + promedio.toFixed(2) + "<br>");
+
+  if (promedio >= 7) {
+    document.write("<strong>Promocionado</strong>");
+  }
+</script>
+</body>
+</html>
