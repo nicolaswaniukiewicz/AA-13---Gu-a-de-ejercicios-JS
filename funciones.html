@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Función: rango</title></head><body>
+<script>
+  function mostrarRango() {
+    let menor = parseInt(prompt("Ingresá el MENOR entero:"), 10);
+    let mayor = parseInt(prompt("Ingresá el MAYOR entero:"), 10);
+
+    if (menor > mayor) { const t = menor; menor = mayor; mayor = t; }
+
+    for (let n = menor; n <= mayor; n++) {
+      document.write(n + (n < mayor ? " " : ""));
+    }
+  }
+
+  mostrarRango();
+</script>
+</body></html>
