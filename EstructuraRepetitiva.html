@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><title>Serie 11–22–33…</title></head>
+<body>
+<script>
+  let i = 1;
+  let termino = 11;
+  let salida = "";
+
+  while (i <= 25) {
+    salida += termino + (i < 25 ? " - " : "");
+    termino += 11; // siguiente múltiplo de 11
+    i++;
+  }
+
+  document.write(salida);
+</script>
+</body>
+</html>
