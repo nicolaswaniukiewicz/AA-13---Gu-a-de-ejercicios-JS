@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Función: menor de tres</title></head><body>
+<script>
+  function mostrarMenor(a, b, c) {
+    const menor = Math.min(a, b, c);
+    document.write(`El menor es: <strong>${menor}</strong>`);
+  }
+
+  const x = parseInt(prompt("Primer entero:"), 10);
+  const y = parseInt(prompt("Segundo entero:"), 10);
+  const z = parseInt(prompt("Tercer entero:"), 10);
+  mostrarMenor(x, y, z);
+</script>
+</body></html>
