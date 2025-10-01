@@ -1,0 +1,33 @@
+<html lang="es">
+<head><meta charset="UTF-8"><title>Traducción con switch</title></head>
+<body>
+<script>
+  const entrada = prompt("Ingresá una palabra (casa, mesa, perro, gato):");
+  const palabra = (entrada || "").trim().toLowerCase();
+  let traduccion;
+
+  switch (palabra) {
+    case "casa":
+      traduccion = "house";
+      break;
+    case "mesa":
+      traduccion = "table";
+      break;
+    case "perro":
+      traduccion = "dog";
+      break;
+    case "gato":
+      traduccion = "cat";
+      break;
+    default:
+      traduccion = null;
+  }
+
+  if (traduccion) {
+    document.write(`"${palabra}" en inglés es <strong>${traduccion}</strong>.`);
+  } else {
+    document.write("Palabra no válida. Probá con: casa, mesa, perro o gato.");
+  }
+</script>
+</body>
+</html>
