@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>String 1</title></head><body>
+<script>
+  let cont = 0, entrada;
+  do {
+    entrada = prompt("Ingresá un nombre (Fin para terminar):");
+    if (entrada !== null && entrada === "Fin") break;
+    if (entrada) cont++;
+  } while (true);
+
+  document.write("Cantidad de nombres ingresados: <strong>" + cont + "</strong>");
+</script>
+</body></html>
