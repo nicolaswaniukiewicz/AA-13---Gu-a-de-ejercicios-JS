@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><title>Array 1</title></head>
+<body>
+<script>
+  const v = [];
+  for (let i = 0; i < 8; i++) {
+    v[i] = parseFloat(prompt(`Valor ${i+1} de 8:`));
+  }
+
+  let sumaTotal = 0;
+  let sumaMayores36 = 0;
+  let cantMayores50 = 0;
+
+  for (let i = 0; i < v.length; i++) {
+    const x = v[i];
+    sumaTotal += x;
+    if (x > 36) sumaMayores36 += x;
+    if (x > 50) cantMayores50++;
+  }
+
+  document.write(`Vector: [${v.join(", ")}]<br>`);
+  document.write(`Suma total: ${sumaTotal}<br>`);
+  document.write(`Suma de elementos > 36: ${sumaMayores36}<br>`);
+  document.write(`Cantidad de valores > 50: ${cantMayores50}`);
+</script>
+</body>
+</html>
