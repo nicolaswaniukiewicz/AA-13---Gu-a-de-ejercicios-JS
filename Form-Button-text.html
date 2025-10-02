@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>FORM + BUTTON + TEXT</title>
+</head>
+<body>
+  <h3>Elevar al cubo</h3>
+
+  <form id="form-cubo">
+    <label>Ingrese un entero:
+      <input id="numero" type="text" />
+    </label>
+    <button type="submit">Calcular</button>
+  </form>
+
+  <script>
+    document.getElementById("form-cubo").addEventListener("submit", function (e) {
+      e.preventDefault(); // evita recargar la página
+
+      const valor = document.getElementById("numero").value.trim();
+      const n = parseInt(valor, 10);
+
+      if (valor === "" || Number.isNaN(n)) {
+        alert("Ingresá un número entero válido.");
+        return;
+      }
+
+      alert(n + " al cubo es " + (n ** 3)); 
+    });
+  </script>
+</body>
+</html>
