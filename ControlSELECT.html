@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><title>Select pizzas</title></head>
+<body>
+  <select id="pizza" onchange="mostrarPrecio()">
+    <option value="">Elegí una pizza</option>
+    <option value="3000">Jamón y Queso</option>
+    <option value="2500">Muzzarella</option>
+    <option value="3200">Morrones</option>
+  </select>
+
+  <input id="precio" type="text" placeholder="Precio" readonly>
+
+  <script>
+    function mostrarPrecio() {
+      var sel = document.getElementById('pizza').value;
+      document.getElementById('precio').value = sel ? ('$ ' + sel) : '';
+    }
+  </script>
+</body>
+</html>
