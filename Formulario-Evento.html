@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Botones con eventos</title>
+</head>
+<body>
+  <h3>Formulario con botones</h3>
+
+  <button onclick="mostrar(1)">1</button>
+  <button onclick="mostrar(2)">2</button>
+  <button onclick="mostrar(3)">3</button>
+
+  <p id="resultado"></p>
+
+  <script>
+    function mostrar(num) {
+      document.getElementById("resultado").innerHTML = 
+        "Se presionó el botón " + num;
+    }
+  </script>
+</body>
+</html>
