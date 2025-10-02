@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><title>Libro de visitas</title></head>
+<body>
+  <input id="nombre" type="text" placeholder="Nombre">
+  <input id="mail" type="text" placeholder="Mail">
+  <br>
+  <textarea id="coment" rows="4" cols="40" placeholder="Comentarios"></textarea>
+  <br>
+  <button onclick="mostrar()">Enviar</button>
+
+  <script>
+    function mostrar() {
+      var n = document.getElementById('nombre').value;
+      var m = document.getElementById('mail').value;
+      var c = document.getElementById('coment').value;
+      alert("Nombre: " + n + "\nMail: " + m + "\nComentarios: " + c);
+    }
+  </script>
+</body>
+</html>
